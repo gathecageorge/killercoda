@@ -1,0 +1,21 @@
+{
+  "title": "Introduction to Micro services monitoring (Prometheus/Grafana/Loki/Promtail/Portainer)",
+  "description": "Lets learn about monitoring services running in docker environment",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Prometheus",
+        "text": "step1/text.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

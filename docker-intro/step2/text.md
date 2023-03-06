@@ -2,7 +2,7 @@
 
 We need to create a compose file specifying all the services we will need. Click on the editor Pane as shown below. Then right click on the explorer side to create a new file as shown. For file name enter `docker-compose.yml`
 
-![Access editor](https://raw.githubusercontent.com/gathecageorge/killercoda/main/Editor.png)
+![Access editor](https://raw.githubusercontent.com/gathecageorge/killercoda/main/images/Editor.png)
 
 Then put the contents below to the file.
 ```yaml
