@@ -42,13 +42,19 @@ docker run -d --network prometheus-network --name prometheus -p 9090:9090 -v $PW
 5. `prom/prometheus:latest` Specify the latest prometheus docker image
 
 To access the prometheus port in the browser, In this interactive environment you need to open `Traffic / Ports` page by clicking on top right side as below.
+
+Open image in new tab if not visible.
 ![Access Traffic / Ports Image](https://raw.githubusercontent.com/gathecageorge/killercoda/main/images/Access_Port.png)
 
 Once you open the page, you can enter the port `9090` under `Custom Ports` and then click `Access`. A new tab will be opened going to the application as shown below.
+
+Open image in new tab if not visible.
 ![Open Custom Ports Image](https://raw.githubusercontent.com/gathecageorge/killercoda/main/images/Open_Port.png)
 
 
 When you access prometheus page, you can click on Status Dropdown and Choose Targets. Here you will see all endpoints that prometheus is scraping as shown below.
+
+Open image in new tab if not visible.
 ![Prometheus Scrape Targets](https://raw.githubusercontent.com/gathecageorge/killercoda/main/micro-services-monitoring-grafana/images/prometheus1.png)
 
 
@@ -118,10 +124,12 @@ We can also add another scrape endpoint for an `imaginary` service called `webse
 
 ```
 
-You can now check the targets from prometheus. You will see 3 targets and 2 with status up and 1 status down as shown below.
+You can now check the targets from prometheus. You will see 3 targets, 2 with status up and 1 status down as shown below.
 
+Open image in new tab if not visible.
 ![Prometheus Scrape Targets](https://raw.githubusercontent.com/gathecageorge/killercoda/main/micro-services-monitoring-grafana/images/prometheus2.png)
 
 To query metrics, in prometheus UI, click on Graph, type a query such as `node_memory_Active_bytes{job="prometheus"}` and click execute. From there you can view data as Table or Graph to see. See image below
 
+Open image in new tab if not visible.
 ![Prometheus Query](https://raw.githubusercontent.com/gathecageorge/killercoda/main/micro-services-monitoring-grafana/images/prometheus3.png)

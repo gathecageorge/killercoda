@@ -15,21 +15,26 @@ docker run -d --network prometheus-network --name grafana -p 3000:3000 -e GF_USE
 
 You need to click on Settings Icon and go to Data Sources as shown below.
 
+Open image in new tab if not visible.
 ![Grafana Data Source](https://raw.githubusercontent.com/gathecageorge/killercoda/main/micro-services-monitoring-grafana/images/grafana1.png)
 
 Choose prometheus data source type and enter details as shown. After that click `Save & test`.
 1. `URL` http://prometheus:9090
 
+Open image in new tab if not visible.
 ![Grafana Data Source](https://raw.githubusercontent.com/gathecageorge/killercoda/main/micro-services-monitoring-grafana/images/grafana2.png)
 
 You can then go to Dashboards and click import. Enter ID `1860` on the `Import via grafana.com` and click load. See below
 
+Open image in new tab if not visible.
 ![Grafana Dashboard import](https://raw.githubusercontent.com/gathecageorge/killercoda/main/micro-services-monitoring-grafana/images/grafana3.png)
 
 Choose data source as prometheus and click import.
 
+Open image in new tab if not visible.
 ![Grafana Dashboard import](https://raw.githubusercontent.com/gathecageorge/killercoda/main/micro-services-monitoring-grafana/images/grafana4.png)
 
 Once done, you will see a dashboard thats generated from prometheus metrics scraped from node-exporter. You can filter by time as required to see usage over time.
 
+Open image in new tab if not visible.
 ![Grafana Dashboard](https://raw.githubusercontent.com/gathecageorge/killercoda/main/micro-services-monitoring-grafana/images/grafana5.png)

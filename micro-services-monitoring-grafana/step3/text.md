@@ -125,9 +125,14 @@ docker run -d --network prometheus-network --name loki -v $PWD/loki.yml:/etc/lok
 
 Once you have the container running, we can go back to the grafana UI from previous step and add Loki as data source. Choose Loki Data source and add URL as below.
 
+`http://loki:3100`
+
+Open image in new tab if not visible.
 ![Loki Datasource Image](https://raw.githubusercontent.com/gathecageorge/killercoda/main/micro-services-monitoring-grafana/images/loki1.png)
 
-In order to view logs, we can create a container that will create log messages. We use random logger docker image. This will run a random log generator generating logs randomly one for each time between 100 and 400 milliseconds. Run this command to start a service that will have logs.
+In order to view logs, we can create a container that will create log messages. We use random logger docker image. This will run a random log generator generating logs randomly one for each time between 100 and 400 milliseconds. Run this command to start a service that will have logs. 
+
+`NB The --log-driver and --log-opt are required so that promtail can pick up the logs for the container. That is why it will not pick up logs from the other containers like grafana or prometheus that dont have this options.`
 
 ```bash
 docker run -d --name randomlogger --log-driver json-file --log-opt tag="{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}" chentex/random-logger:latest 100 400
@@ -141,4 +146,5 @@ If you need filter the logs by type eg ERROR, DEBUG, INFO, WARN etc you can use 
 
 e.g `{container_name="randomlogger", job="containerlogs"} |= "ERROR"`
 
+Open image in new tab if not visible.
 ![Loki Logs View Image](https://raw.githubusercontent.com/gathecageorge/killercoda/main/micro-services-monitoring-grafana/images/loki2.png)
