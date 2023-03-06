@@ -1,14 +1,18 @@
 {
   "title": "Docker and docker-compose introduction",
-  "description": "Lets learn about docker and docker-compose to deploy and run containers.",
+  "description": "Lets learn about docker and docker-compose to deploy and run containers. In this scenario, we will deploy mysql database server and phpmyadmin web access to the database.",
   "details": {
     "intro": {
       "text": "intro.md"
     },
     "steps": [
       {
-        "title": "Run mysql database using docker container",
+        "title": "Run mysql database server/phpmyadmin using docker",
         "text": "step1/text.md"
+      },
+      {
+        "title": "Run mysql database server/phpmyadmin using docker compose",
+        "text": "step2/text.md"
       }
     ],
     "finish": {
