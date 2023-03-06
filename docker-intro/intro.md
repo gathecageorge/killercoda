@@ -6,6 +6,4 @@ Docker allows you to run your services inside containers. A container is a self 
 
 You can either package your application to a docker image or use some of the community images from docker hub or any image repository. 
 
-A sample docker image is 'mysql' database image in docker hub https://hub.docker.com/_/mysql
-
-Lets deploy mysql database and phpmyadmin to access the database.
+Lets deploy [mysql database server](https://hub.docker.com/_/mysql) and [phpmyadmin web interface](https://hub.docker.com/_/phpmyadmin) to access the database.
