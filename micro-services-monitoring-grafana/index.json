@@ -13,6 +13,10 @@
       {
         "title": "Grafana",
         "text": "step2/text.md"
+      },
+      {
+        "title": "Promtail/Loki",
+        "text": "step3/text.md"
       }
     ],
     "finish": {
