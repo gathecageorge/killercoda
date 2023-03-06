@@ -2,6 +2,8 @@
 
 We will use the official docker image for mysql database [mysql:latest](https://hub.docker.com/_/mysql) to run the database server. Copy or write the following command to deploy mysql database server. Its recommended to write the command to for better understanding and mastery.
 
+To paste commands, use `Ctrl + Shift + V`
+
 ```bash
 docker run --name mysql-server -e MYSQL_ROOT_PASSWORD=password -d mysql:latest
 ```
@@ -39,3 +41,10 @@ Once you open the page, you can enter the port under `Custom Ports` and then cli
 
 Congratulations, you have successfully run 2 docker containers and accessed the web interface exposed by one of the services. In the next step, we learn how to use docker compose to run the same services using one command.
 
+## Bonus
+
+You can confirm all containers using the command below. The `-a` allows you to view all containers whether running or not. If you just want running ones, omit the -a.
+
+```bash
+docker ps -a
+```

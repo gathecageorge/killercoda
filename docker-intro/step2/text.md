@@ -26,6 +26,8 @@ services:
     # set the database server for phpmyadmin
     environment:
       - PMA_HOST=mysql-server
+
+
 ```
 
 After that, you can just use the terminal within the editor to execute more commands as shown above or go back to `Tab 1`
@@ -49,7 +51,7 @@ docker-compose -f docker-compose.yml up -d
 To delete the services, just run command below. The `-v` means delete any docker volumes that might have been created by the services also. Volumes are like persistent storage for the containers.
 
 ```bash
-docker-compose -f docker-compose.yml delete -v
+docker-compose -f docker-compose.yml down -v
 ```
 
 ### Delete containers from previous step
@@ -59,3 +61,4 @@ This deletes the containers from previous step in one command. The `-f` means fo
 ```bash
 docker rm -f mysql-server phpmyadmin
 ```
+
