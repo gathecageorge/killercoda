@@ -67,7 +67,7 @@ Create a new directory called file_sd using command below
 mkdir file_sd
 ```
 
-After modify the prometheus.yml file to be like below.
+After modify the `nano prometheus.yml` file to be like below.
 
 ```yaml
 global:
@@ -108,10 +108,20 @@ To scrape node exporter now, just create a new file inside file_sd directory cal
 
 ```
 
-You can now check the targets from prometheus. You will see 2 targets and both status up as shown below.
+We can also add another scrape endpoint for an `imaginary` service called `webserver:8080`. As this service does not exist, we expect to see its state as Down when we check prometheus targets. Create a file `nano file_sd/webserver.yml` and following contents
+
+```yaml
+- labels:
+    instance: webserver
+  targets:
+  - webserver:8080
+
+```
+
+You can now check the targets from prometheus. You will see 3 targets and 2 with status up and 1 status down as shown below.
 
 ![Prometheus Scrape Targets](https://raw.githubusercontent.com/gathecageorge/killercoda/main/micro-services-monitoring-grafana/images/prometheus2.png)
 
 To query metrics, in prometheus UI, click on Graph, type a query such as `node_memory_Active_bytes{job="prometheus"}` and click execute. From there you can view data as Table or Graph to see. See image below
 
-![Prometheus Scrape Targets](https://raw.githubusercontent.com/gathecageorge/killercoda/main/micro-services-monitoring-grafana/images/prometheus3.png)
+![Prometheus Query](https://raw.githubusercontent.com/gathecageorge/killercoda/main/micro-services-monitoring-grafana/images/prometheus3.png)
