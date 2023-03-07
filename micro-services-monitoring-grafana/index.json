@@ -17,6 +17,14 @@
       {
         "title": "Promtail/Loki",
         "text": "step3/text.md"
+      },
+      {
+        "title": "Portainer",
+        "text": "step4/text.md"
+      },
+      {
+        "title": "Running everything using docker compose",
+        "text": "step5/text.md"
       }
     ],
     "finish": {
