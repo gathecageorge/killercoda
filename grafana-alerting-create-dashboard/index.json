@@ -1,0 +1,29 @@
+{
+  "title": "Create dashboard in grafana and setup alerts",
+  "description": "Lets learn how to create dashboard in grafana and setup alerts to slack",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Setup test environment",
+        "text": "step1/text.md"
+      },
+      {
+        "title": "Add Dashboard and First Alert",
+        "text": "step2/text.md"
+      },
+      {
+        "title": "Alert from Logs",
+        "text": "step3/text.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
