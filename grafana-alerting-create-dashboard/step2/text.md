@@ -34,9 +34,9 @@ Scroll down and under `Add details for your alert rule` click on `Add annotation
 
 Scroll to the top and click `Save and exit`. You will be taken to alerts page showing 1 rule and status normal.
 
-## Slack setup
-
 ![Create alert](https://raw.githubusercontent.com/gathecageorge/killercoda/main/grafana-alerting-create-dashboard/images/dashboard5.png)
+
+## Slack setup
 
 You need to create a slack app to receive notifications. Follow the link https://api.slack.com/apps to create an app.
 
@@ -57,7 +57,7 @@ Copy the webhook URL for use on grafana next page.
 
 ## Grafana alert setup
 
-Click on `Contact points` and then `Add contact point`. Enter details as follows
+Go back to grafana alerts page and click on `Contact points` and then `Add contact point`. Enter details as follows
 ![Create alert](https://raw.githubusercontent.com/gathecageorge/killercoda/main/grafana-alerting-create-dashboard/images/dashboard12.png)
 
 Name: `slack-alert`
