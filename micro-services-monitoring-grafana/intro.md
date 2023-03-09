@@ -8,4 +8,4 @@ This is where this tools come in. This tutorial is structed as below:
 2. Grafana highlight
 3. Promtail/Loki highlight
 4. Portainer highlight
-5. Setting up the tools using a github sample library. You can skip upto here to setup a test environment easily and then come back from top to learn the components.
+5. Setting up the tools using a github library.
