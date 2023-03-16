@@ -18,7 +18,7 @@ Lets say you want to be alerted when there are more than 5 error logs every 1 mi
 
 Choose Folder as `My alerts` and Evaluation group as `My alerts`. For time choose 1min so alert is evaluated faster instead of 5min
 
-Under details for yout alert rule, add annotation and choose summary. Add this as value `{{ $labels.instance}} is reporting {{ $values.B.Value }} Errors for the last 1 minutes.`
+Under details for your alert rule, add annotation and choose summary. Add this as value `{{ $labels.container_name}} is reporting {{ $values.B.Value }} Errors for the last 1 minutes.`
 
 ![Logs](https://raw.githubusercontent.com/gathecageorge/killercoda/main/grafana-alerting-create-dashboard/images/logs2.png)
 
@@ -27,6 +27,19 @@ Click on `save and exit`.
 Click save when back on dashboard and then go back. You should receive an alert after a while as below.
 ![Logs](https://raw.githubusercontent.com/gathecageorge/killercoda/main/grafana-alerting-create-dashboard/images/logs3.png)
 
+## Task
+To test your learning, create a new panel to show error/warn logs from a random logger docker container. You can start the container using command below. This will generate random logs every 1-3 seconds.
+
+```bash
+docker run -d --name randomlogger --log-driver json-file --log-opt tag="{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}" chentex/random-logger:latest 1000 3000
+```
+
+Once the container is running, you can visualize the logs count per minute using Explore in grafana and the following query. (Select non debug/info logs count)
+```bash
+count_over_time({container_name="randomlogger"} !~ "DEBUG|INFO" [1m])
+```
+
+From the dashboard, create an alert so you can be notified when error the value falls below 1. This means be alerted when the container is stopped or does not exist since if its there then the value should always be greater than 1.
 
 ## Whats next
 From here you can create other alerts as needed.
