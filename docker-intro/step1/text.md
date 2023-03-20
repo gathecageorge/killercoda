@@ -31,7 +31,10 @@ docker run --name phpmyadmin -d --link mysql-server:db -p 8080:80 phpmyadmin:lat
 
 If you were running the commands in your machine, you would need to open [http://localhost:8080](http://localhost:8080) to access phpmyadmin web interface. 
 
-In this interactive environment you need to open `Traffic / Ports` page by clicking on top right side as below.
+In this interactive environment, you can use the link below to access:
+* [PhpMyAdmin]({{TRAFFIC_HOST1_8080}})
+
+If you need to open any other port, click on `Traffic / Ports` page by clicking on top right side as below.
 ![Access Traffic / Ports Image](https://raw.githubusercontent.com/gathecageorge/killercoda/main/images/Access_Port.png)
 
 Once you open the page, you can enter the port under `Custom Ports` and then click `Access`. A new tab will be opened going to the application as shown below.
