@@ -49,9 +49,9 @@ docker-compose up -d
 
 Examples screenshots
 
-![Loki logs expolore](https://raw.githubusercontent.com/gathecageorge/killercoda/main/micro-services-monitoring-grafana/images/end1.png)
+![Loki logs expolore](https://raw.githubusercontent.com/gathecageorge/killercoda/main/2-micro-services-monitoring-grafana/images/end1.png)
 
-![Prometheus explore](https://raw.githubusercontent.com/gathecageorge/killercoda/main/micro-services-monitoring-grafana/images/end2.png)
+![Prometheus explore](https://raw.githubusercontent.com/gathecageorge/killercoda/main/2-micro-services-monitoring-grafana/images/end2.png)
 
 ## Whats Next
 Now you have learnt how to setup the tools for monitoring the services. From here we learn more about setting alerts, intergrating with slack, CI/CD to auto deploy services etc. Check back for more scenarios on this from my account https://killercoda.com/gathecageorge and more articles on medium https://gatheca-george.medium.com/

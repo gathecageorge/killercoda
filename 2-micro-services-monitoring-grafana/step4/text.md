@@ -14,24 +14,24 @@ If you want to see portainer running, open it on port `9000` like shown on previ
 
 The first time you open the UI, you will have to set a username and password as required.
 
-![Portainer Setup](https://raw.githubusercontent.com/gathecageorge/killercoda/main/micro-services-monitoring-grafana/images/portainer1.png)
+![Portainer Setup](https://raw.githubusercontent.com/gathecageorge/killercoda/main/2-micro-services-monitoring-grafana/images/portainer1.png)
 
 After that just click on `Getting Started` from the `Environment Wizard`.
 
-![Portainer Getting Started](https://raw.githubusercontent.com/gathecageorge/killercoda/main/micro-services-monitoring-grafana/images/portainer2.png)
+![Portainer Getting Started](https://raw.githubusercontent.com/gathecageorge/killercoda/main/2-micro-services-monitoring-grafana/images/portainer2.png)
 
 From there you will see the local environment indicating how much resources you have and number of container running etc.
 
-![Portainer Local environment](https://raw.githubusercontent.com/gathecageorge/killercoda/main/micro-services-monitoring-grafana/images/portainer3.png)
+![Portainer Local environment](https://raw.githubusercontent.com/gathecageorge/killercoda/main/2-micro-services-monitoring-grafana/images/portainer3.png)
 
 ### Deploy container
 You can Click on container, then add container. Fill details as below. This will deploy an nginx web server at port `8081` which you can open to see default nginx page.
 
 * [Click to open Nginx "`http://localhost:8081` if on your machine"]({{TRAFFIC_HOST1_8081}})
 
-![Portainer deploy container](https://raw.githubusercontent.com/gathecageorge/killercoda/main/micro-services-monitoring-grafana/images/portainer4.png)
+![Portainer deploy container](https://raw.githubusercontent.com/gathecageorge/killercoda/main/2-micro-services-monitoring-grafana/images/portainer4.png)
 
-![Portainer deploy container](https://raw.githubusercontent.com/gathecageorge/killercoda/main/micro-services-monitoring-grafana/images/portainer5.png)
+![Portainer deploy container](https://raw.githubusercontent.com/gathecageorge/killercoda/main/2-micro-services-monitoring-grafana/images/portainer5.png)
 
 ### Deploy docker compose stack
 Now lets deploy something more complicated. We will deploy a php application and mysql database server. The php application will connect to the database at startup. Click on Stack, Add new Stack, Repository and fill details as below.
@@ -44,7 +44,7 @@ Compose Path: `docker-compose.yml`
 
 You also need to add this environment variables. Click on advanced mode to be able to put the values in text form. See image below.
 
-![Portainer deploy stack](https://raw.githubusercontent.com/gathecageorge/killercoda/main/micro-services-monitoring-grafana/images/portainer6.png)
+![Portainer deploy stack](https://raw.githubusercontent.com/gathecageorge/killercoda/main/2-micro-services-monitoring-grafana/images/portainer6.png)
 
 Environment variables content
 ```yaml

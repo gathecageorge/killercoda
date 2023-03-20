@@ -56,7 +56,7 @@ Once you open the page, you can enter the port `9090` under `Custom Ports` and t
 <hr>
 
 When you access prometheus page, you can click on Status Dropdown and Choose Targets. Here you will see all endpoints that prometheus is scraping as shown below. Open image in new tab if not visible.
-![Prometheus Scrape Targets](https://raw.githubusercontent.com/gathecageorge/killercoda/main/micro-services-monitoring-grafana/images/prometheus1.png)
+![Prometheus Scrape Targets](https://raw.githubusercontent.com/gathecageorge/killercoda/main/2-micro-services-monitoring-grafana/images/prometheus1.png)
 
 
 ## Add Another scrape target - Node exporter
@@ -128,9 +128,9 @@ We can also add another scrape endpoint for an `imaginary` service called `webse
 You can now check the targets from prometheus. You will see 3 targets, 2 with status up and 1 status down as shown below.
 
 Open image in new tab if not visible.
-![Prometheus Scrape Targets](https://raw.githubusercontent.com/gathecageorge/killercoda/main/micro-services-monitoring-grafana/images/prometheus2.png)
+![Prometheus Scrape Targets](https://raw.githubusercontent.com/gathecageorge/killercoda/main/2-micro-services-monitoring-grafana/images/prometheus2.png)
 
 To query metrics, in prometheus UI, click on Graph, type a query such as `node_memory_Active_bytes{job="prometheus"}` and click execute. From there you can view data as Table or Graph to see. See image below
 
 Open image in new tab if not visible.
-![Prometheus Query](https://raw.githubusercontent.com/gathecageorge/killercoda/main/micro-services-monitoring-grafana/images/prometheus3.png)
+![Prometheus Query](https://raw.githubusercontent.com/gathecageorge/killercoda/main/2-micro-services-monitoring-grafana/images/prometheus3.png)

@@ -128,7 +128,7 @@ Once you have the container running, we can go back to the grafana UI from previ
 `http://loki:3100`
 
 Open image in new tab if not visible.
-![Loki Datasource Image](https://raw.githubusercontent.com/gathecageorge/killercoda/main/micro-services-monitoring-grafana/images/loki1.png)
+![Loki Datasource Image](https://raw.githubusercontent.com/gathecageorge/killercoda/main/2-micro-services-monitoring-grafana/images/loki1.png)
 
 In order to view logs, we can create a container that will create log messages. We use random logger docker image. This will run a random log generator generating logs randomly one for each time between 100 and 400 milliseconds. Run this command to start a service that will have logs. 
 
@@ -147,4 +147,4 @@ If you need filter the logs by type eg ERROR, DEBUG, INFO, WARN etc you can use 
 e.g `{container_name="randomlogger", job="containerlogs"} |= "ERROR"`
 
 Open image in new tab if not visible.
-![Loki Logs View Image](https://raw.githubusercontent.com/gathecageorge/killercoda/main/micro-services-monitoring-grafana/images/loki2.png)
+![Loki Logs View Image](https://raw.githubusercontent.com/gathecageorge/killercoda/main/2-micro-services-monitoring-grafana/images/loki2.png)

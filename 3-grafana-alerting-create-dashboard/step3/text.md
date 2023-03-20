@@ -4,7 +4,7 @@ We need to create an alert from logs.
 
 1. Go to dashboard and choose the previous dashboard `My Dashboard`. 
 2. Click on add panel icon and choose add new panel
-![Logs](https://raw.githubusercontent.com/gathecageorge/killercoda/main/grafana-alerting-create-dashboard/images/logs1.png)
+![Logs](https://raw.githubusercontent.com/gathecageorge/killercoda/main/3-grafana-alerting-create-dashboard/images/logs1.png)
 3. For name add `Loki Logs`
 4. For time choose 30min
 5. For data source choose Loki
@@ -20,12 +20,12 @@ Choose Folder as `My alerts` and Evaluation group as `My alerts`. For time choos
 
 Under details for your alert rule, add annotation and choose summary. Add this as value `{{ $labels.container_name}} is reporting {{ $values.B.Value }} Errors for the last 1 minutes.`
 
-![Logs](https://raw.githubusercontent.com/gathecageorge/killercoda/main/grafana-alerting-create-dashboard/images/logs2.png)
+![Logs](https://raw.githubusercontent.com/gathecageorge/killercoda/main/3-grafana-alerting-create-dashboard/images/logs2.png)
 
 Click on `save and exit`.
 
 Click save when back on dashboard and then go back. You should receive an alert after a while as below.
-![Logs](https://raw.githubusercontent.com/gathecageorge/killercoda/main/grafana-alerting-create-dashboard/images/logs3.png)
+![Logs](https://raw.githubusercontent.com/gathecageorge/killercoda/main/3-grafana-alerting-create-dashboard/images/logs3.png)
 
 ## Task
 To test your learning, create a new panel to show error/warn logs from a random logger docker container. You can start the container using command below. This will generate random logs every 1-3 seconds.
@@ -46,7 +46,7 @@ From here you can create other alerts as needed.
 When an alert condition is resolved, say when memory is no longer above 70% or logs are below 5, then you will get an alert of type `RESOLVED` as below
 
 Resolved memory usage
-![Logs](https://raw.githubusercontent.com/gathecageorge/killercoda/main/grafana-alerting-create-dashboard/images/logs4.png)
+![Logs](https://raw.githubusercontent.com/gathecageorge/killercoda/main/3-grafana-alerting-create-dashboard/images/logs4.png)
 
 Resolved logs (Note have changed the values trigger resolved like adding high number of logs to alert. Same for memory.)
-![Logs](https://raw.githubusercontent.com/gathecageorge/killercoda/main/grafana-alerting-create-dashboard/images/logs5.png)
+![Logs](https://raw.githubusercontent.com/gathecageorge/killercoda/main/3-grafana-alerting-create-dashboard/images/logs5.png)
