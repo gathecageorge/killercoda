@@ -46,6 +46,13 @@ To start all the services specified in the file, run the command below. This sta
 docker-compose -f docker-compose.yml up -d
 ```
 
+<hr>
+
+### Access New PhpMyAdmin
+* [Click to open PhpMyAdmin "`http://localhost:8081` if on your machine"]({{TRAFFIC_HOST1_8081}})
+
+<hr>
+
 ### Delete the services
 
 To delete the services, just run command below. The `-v` means delete any docker volumes that might have been created by the services also. Volumes are like persistent storage for the containers.

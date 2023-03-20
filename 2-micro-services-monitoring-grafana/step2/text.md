@@ -7,11 +7,13 @@ Using grafana, you can query for the logs or metrics by adding Prometheus and Lo
 
 
 ## Start grafana
-To run grafana use command below. This will launch grafana and map port 3000 to it. You can then open port `3000` as shown in previous step and login using username `myadmin` and password `mypass`.
+To run grafana use command below. This will launch grafana and map port 3000 to it. You can then open port `3000` as shown in previous step or link below and login using username `myadmin` and password `mypass`.
 
 ```bash
 docker run -d --network prometheus-network --name grafana -p 3000:3000 -e GF_USERS_ALLOW_SIGN_UP=false -e GF_SECURITY_ADMIN_USER=myadmin -e GF_SECURITY_ADMIN_PASSWORD=mypass grafana/grafana:latest
 ```
+
+* [Click to open Grafana "`http://localhost:3000` if on your machine"]({{TRAFFIC_HOST1_3000}})
 
 You need to click on Settings Icon and go to Data Sources as shown below.
 

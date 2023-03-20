@@ -27,18 +27,20 @@ docker run --name phpmyadmin -d --link mysql-server:db -p 8080:80 phpmyadmin:lat
 1. `--link` This is used to link the mysql database to the phpmyadmin. This means the containers can communicate with each other
 2. `-p` This allows us to expose a port from the container so that we can access it outside in host machine. We want to access port `80` inside container using port `8080` outside in the host. In your machine for example, opening [http://localhost:8080](http://localhost:8080) will open the container port `80`. 
 
+<hr>
+
 ## Connect to database
 
-If you were running the commands in your machine, you would need to open [http://localhost:8080](http://localhost:8080) to access phpmyadmin web interface. 
-
 In this interactive environment, you can use the link below to access:
-* [PhpMyAdmin]({{TRAFFIC_HOST1_8080}})
+* [Click to open PhpMyAdmin "`http://localhost:8080` if on your machine"]({{TRAFFIC_HOST1_8080}})
 
 If you need to open any other port, click on `Traffic / Ports` page by clicking on top right side as below.
 ![Access Traffic / Ports Image](https://raw.githubusercontent.com/gathecageorge/killercoda/main/images/Access_Port.png)
 
 Once you open the page, you can enter the port under `Custom Ports` and then click `Access`. A new tab will be opened going to the application as shown below.
 ![Open Custom Ports Image](https://raw.githubusercontent.com/gathecageorge/killercoda/main/images/Open_Port.png)
+
+<hr>
 
 ## Conclusion
 

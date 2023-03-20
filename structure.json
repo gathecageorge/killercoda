@@ -1,0 +1,7 @@
+{
+  "items": [
+    { "path": "1-docker-intro" },
+    { "path": "2-micro-services-monitoring-grafana"},
+    { "path": "3-grafana-alerting-create-dashboard" }
+  ]
+}

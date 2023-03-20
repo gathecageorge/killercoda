@@ -12,7 +12,13 @@ The steps are outlined here but if you need more information you can open this s
 6. Run all services `docker-compose up -d`
 7. Open grafana on port `3000`. See instructions to open port below.
 
-In this interactive environment you need to open `Traffic / Ports` page by clicking on top right side as below.
+<hr>
+
+## Open ports
+
+* [Click to open Grafana "`http://localhost:3000` if on your machine"]({{TRAFFIC_HOST1_3000}})
+
+To open any other port, in this interactive environment you need to open `Traffic / Ports` page by clicking on top right side as below.
 ![Access Traffic / Ports Image](https://raw.githubusercontent.com/gathecageorge/killercoda/main/images/Access_Port.png)
 
 Once you open the page, you can enter the port under `Custom Ports` and then click `Access`. A new tab will be opened going to the application as shown below. Enter port number and click Access.

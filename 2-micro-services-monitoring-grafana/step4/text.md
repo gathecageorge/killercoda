@@ -8,7 +8,9 @@ docker run -d -p 8000:8000 -p 9443:9443 -p 9000:9000 --name portainer --restart=
 ```
 
 ## Portainer User Interface
-If you want to see portainer running, open it on port `9000` like shown on previous steps how to open a port. It will allow you to see the containers running at a glance and also run others from its web interface.
+If you want to see portainer running, open it on port `9000` like shown on previous steps how to open a port or click link below. It will allow you to see the containers running at a glance and also run others from its web interface.
+
+* [Click to open Portainer "`http://localhost:9000` if on your machine"]({{TRAFFIC_HOST1_9000}})
 
 The first time you open the UI, you will have to set a username and password as required.
 
@@ -24,6 +26,8 @@ From there you will see the local environment indicating how much resources you 
 
 ### Deploy container
 You can Click on container, then add container. Fill details as below. This will deploy an nginx web server at port `8081` which you can open to see default nginx page.
+
+* [Click to open Nginx "`http://localhost:8081` if on your machine"]({{TRAFFIC_HOST1_8081}})
 
 ![Portainer deploy container](https://raw.githubusercontent.com/gathecageorge/killercoda/main/micro-services-monitoring-grafana/images/portainer4.png)
 
@@ -56,6 +60,9 @@ MYSQL_HOST=mysql
 ```
 
 After that, just click deploy and wait. You can access PHP application at port `8082` and MySQL phpMyAdmin at port `8083`. Username and password for database are indicated above in config file. ie username `root` password `root` or username `testinguser` and password `AveryHardPassword`.
+
+* [Click to open PHP Application "`http://localhost:8082` if on your machine"]({{TRAFFIC_HOST1_8082}})
+* [Click to open PhpMyAdmin "`http://localhost:8083` if on your machine"]({{TRAFFIC_HOST1_8083}})
 
 This session has shown you how to deploy containers or complex applications using portainer. If you want to remove any services, you can do so easily using portainer UI also.
 

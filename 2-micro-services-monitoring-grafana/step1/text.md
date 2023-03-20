@@ -41,20 +41,21 @@ docker run -d --network prometheus-network --name prometheus -p 9090:9090 -v $PW
 4. `-v` We mount the file we created above inside the container `/etc/prometheus/prometheus.yml` so prometheus can start with that configuration.
 5. `prom/prometheus:latest` Specify the latest prometheus docker image
 
-To access the prometheus port in the browser, In this interactive environment you need to open `Traffic / Ports` page by clicking on top right side as below.
+<hr>
 
-Open image in new tab if not visible.
+## Access Exposed Prometheus
+
+* [Click to open Prometheus "`http://localhost:9090` if on your machine"]({{TRAFFIC_HOST1_9090}})
+
+If you need to open any other port, click on `Traffic / Ports` page by clicking on top right side as below. Open image in new tab if not visible.
 ![Access Traffic / Ports Image](https://raw.githubusercontent.com/gathecageorge/killercoda/main/images/Access_Port.png)
 
-Once you open the page, you can enter the port `9090` under `Custom Ports` and then click `Access`. A new tab will be opened going to the application as shown below.
-
-Open image in new tab if not visible.
+Once you open the page, you can enter the port `9090` under `Custom Ports` and then click `Access`. A new tab will be opened going to the application as shown below. Open image in new tab if not visible.
 ![Open Custom Ports Image](https://raw.githubusercontent.com/gathecageorge/killercoda/main/images/Open_Port.png)
 
+<hr>
 
-When you access prometheus page, you can click on Status Dropdown and Choose Targets. Here you will see all endpoints that prometheus is scraping as shown below.
-
-Open image in new tab if not visible.
+When you access prometheus page, you can click on Status Dropdown and Choose Targets. Here you will see all endpoints that prometheus is scraping as shown below. Open image in new tab if not visible.
 ![Prometheus Scrape Targets](https://raw.githubusercontent.com/gathecageorge/killercoda/main/micro-services-monitoring-grafana/images/prometheus1.png)
 
 

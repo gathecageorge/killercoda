@@ -42,8 +42,8 @@ docker-compose up -d
 
 # Congratulations
  You now have all the services up and running as before. 
- 1. Open port `9000` for portainer and setup password as before.
- 2. Open port `3000` and access grafana. 
+ 1. Open port [9000 portainer "`http://localhost:9000` if on your machine"]({{TRAFFIC_HOST1_9000}}) for portainer and setup password as before.
+ 2. Open port [3000 portainer "`http://localhost:3000` if on your machine"]({{TRAFFIC_HOST1_3000}}) and access grafana. 
  3. NB: 2 dashboards are imported automatically. One showing node-exporter metrics and another showing prometheus metrics.
  4. You dont have to add the data sources, they are added automatically. Both prometheus and loki data source.
 
